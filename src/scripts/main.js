@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const cell = document.createElement('td');
 
         cell.textContent = `Row ${table.rows.length + 1} Col ${i + 1}`;
-        row.appendChild(document.createElement('td'));
+        row.appendChild(cell);
       }
       table.appendChild(row);
       updateButtonStates();
